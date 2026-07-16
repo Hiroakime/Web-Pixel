@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pixel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background: url('img/tech background.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.55);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 600;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 3.6rem;
+      margin: 0 0 20px;
+      line-height: 1.05;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 0 0 30px;
+      line-height: 1.6;
+      color: #d7d7d7;
+    }
+
+    .hero .cta {
+      display: inline-block;
+      padding: 14px 30px;
+      border: 2px solid #1de9b6;
+      color: #1de9b6;
+      text-decoration: none;
+      border-radius: 40px;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .hero .cta:hover {
+      background: #1de9b6;
+      color: #0d0d0d;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      padding: 60px 60px 80px;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+      min-height: 220px;
+    }
+
+    .feature-card h2 {
+      margin: 0 0 14px;
+      font-size: 1.4rem;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: #d4d4d4;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 24px 60px;
+      font-size: 0.95rem;
+      color: #aaaaaa;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    @media (max-width: 760px) {
+      header, .features, footer {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        margin-left: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <div class="logo">Web Pixel</div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Do you wanna learn how to create eye-catching web page design?</h1>
+        <p>Begin with a bold headline, a clean layout, and clear structure. These small choices can make your site stand out right away.</p>
+        <a class="cta" href="#features">See the Design</a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="feature-card">
+        <h2>Learn the Structure</h2>
+        <p>Use simple HTML sections, headings, and cards to build a layout that looks clean and easy to follow.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Design with Impact</h2>
+        <p>Use bold fonts, strong colors, and good spacing to grab attention and keep people interested.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Share Your Contact</h2>
+        <p>Add your social links and contact info in a simple footer so people know how to reach you and give feedback to your work.</p>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>Do you have any feedback, suggestions, or just want to reach out to me? Feel free to get in touch with me through my socials!</p>
+      <p>Facebook: <a href="https://www.facebook.com/hiroakime" target="_blank" rel="noopener noreferrer" style="color:#1de9b6; text-decoration:underline;">Andrei Tumolva</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/hiroakime" target="_blank" rel="noopener noreferrer" style="color:#1de9b6; text-decoration:underline;">Hiroakime</a></p>
+      <p>Phone: <a href="#" style="color:#1de9b6; text-decoration:none;">+63 925 453 2685</a></p>
+      <p>Email: <a href="#" style="color:#1de9b6; text-decoration:none;">tumolvaandreistephen@gmail.com</a></p>
+      <p style="margin-top:16px; color:#cccccc;">Made by Andrei Tumolva using HTML.</p>
+    </footer>
+  </div>
+</body>
+</html>
